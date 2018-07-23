@@ -1,0 +1,47 @@
+{
+    "name": "moriorgames/feature-toggle-php",
+    "type": "project",
+    "license": "proprietary",
+    "description": "Project to experiment how to change application behaviour at runtime.",
+    "require": {
+        "php": "^7.1",
+        "ext-iconv": "*",
+        "monolog/monolog": "^1.23",
+        "symfony/asset": "^4.1",
+        "symfony/console": "^4.1",
+        "symfony/dotenv": "^4.1",
+        "symfony/flex": "^1.0",
+        "symfony/framework-bundle": "^4.1",
+        "symfony/lts": "^4@dev",
+        "symfony/twig-bundle": "^4.1",
+        "symfony/yaml": "^4.1"
+    },
+    "require-dev": {
+        "symfony/thanks": "^1.0",
+        "symfony/var-dumper": "^4.1"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+
+# System files
+.DS_Store
+.idea
+dump.rdb
+
+# Cache and logs
+var/cache/*
+!var/cache/.gitkeep
+var/log/*
+!var/log/.gitkeep
+
+# Managed by Composer
+vendor/*
+!vendor/.gitkeep
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
