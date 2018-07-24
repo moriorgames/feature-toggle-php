@@ -5,6 +5,6 @@ services:
       image: moriorgames/feature-toggle-php
       container_name: feature_toggle
       ports:
-        - "8080:8080"
+        - "8085:8085"
       volumes:
         - .:/var/www/html

@@ -1,7 +1,7 @@
 # Build command:
 # docker build -t moriorgames/feature-toggle-php .
 # Run command:
-# docker run -td --name feature_toggle -p 8080:8080 moriorgames/feature-toggle-php
+# docker run -td --name feature_toggle -p 8085:8085 moriorgames/feature-toggle-php
 FROM        moriorgames/php72-base
 MAINTAINER  MoriorGames "moriorgames@gmail.com"
 
@@ -32,7 +32,7 @@ RUN         chmod 755 -R var
 RUN         chmod 755 -R public
 
 # Expose ports
-EXPOSE      8080
+EXPOSE      8085
 
 # Add run scripts
 ADD         docker/run.sh /run.sh
