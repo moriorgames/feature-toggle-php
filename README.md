@@ -41,3 +41,5 @@ The final result of split the system into smaller pieces leave us in a state of 
 To do the exercise, I used PHP, but I could have used any other object-oriented language, the concepts are equally usable.
 
 We will give the example of a complex system of validation of a purchase order.
+
+- Step 1: [The starting point](https://github.com/moriorgames/feature-toggle-php/blob/master/docs/step1.md)
